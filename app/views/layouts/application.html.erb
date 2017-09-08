@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Boss 返聘</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <%= render "common/navbar"%>
+      </div>
+
+      <%= render "common/flashes"%>
+      <%= yield %>
+
+    </div>
+    <!-- <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p> -->
+    <%= render "common/footer"%>
+  </body>
+</html>
